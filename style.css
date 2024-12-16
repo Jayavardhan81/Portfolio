@@ -14,7 +14,162 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* ----------------------------------------------------------------------------------- */
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
+.projects-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-card p {
+  padding: 0 1rem;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin: 1rem 0 1.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+  background-color: grey;
+}
+/* Coding Profiles: Default Layout */
+.coding-profiles {
+  margin-top: 2rem;
+}
+
+.profile-links {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Profiles are displayed in a single row by default */
+  justify-content: center;
+  gap: 2rem; /* Space between the links */
+  flex-wrap: wrap; /* Ensures wrapping when the screen width is narrow */
+}
+
+.profile-links a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.profile-links a:hover {
+  color: #0056b3;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Coding Profiles for Smaller Screens */
+@media (max-width: 768px) {
+  .profile-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    gap: 1rem; /* Reduce spacing between the links */
+  }
+
+  .profile-links a {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .profile-icon {
+    width: 25px; /* Smaller icons for smaller screens */
+    height: 25px;
+  }
+}
+
+/* Coding Profiles Section */
+.coding-profiles {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.coding-profiles h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.profile-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.profile-links li {
+  text-align: center;
+}
+
+.profile-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.profile-links a:hover {
+  color: grey;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* ----------------------------------------------------------------------------------- */
 p {
   color: rgb(85, 85, 85);
 }
